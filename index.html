@@ -3,43 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tarjeta de presentacion</title>
+      <title>Cuatro Cajas dentro de un Contenedor</title>
     <style>
-    .tarjeta {
-      width: 300px;
-      height: 150px;
-      padding: 20px;
-      border: 2px solid gray;
-      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-      margin: 0 auto;
-    }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
 
-    .tarjeta h2 {
-      color: skyblue;
-      font-size: 20px;
-    }
+        .articulo {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 2px solid #ccc;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            border-radius: 8px;
+        }
 
-    .tarjeta p {
-      color: #666;
-      font-size: 14px;
-        text-align: justify;
-    }
+        .articulo img {
+            width: 100%;
+            margin-bottom: 10px;
+        }
 
-    .tarjeta button {
-      background-color: #007bff;
-      color: white;
-      padding: 8px 16px;
-      border: none;
-      cursor: pointer;
-    }
-        
-  </style>
+        .contenido {
+            padding: 10px;
+        }
+
+        .contenido h2 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+
+        .leer-mas {
+            display: inline-block;
+            background-color: #007BFF;
+            color: white;
+            padding: 8px 12px;
+            text-decoration: none;
+        }
+
+        .leer-mas:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-  <div class="tarjeta">
-    <h2>Brayan Jovany Nava Domínguez</h2>
-    <p>Estudiante de la licenciatura en Tecnologías de Información en las Organizaciones, actualmente cursa su sexto semestre. </p>
-    <button>Contactar</button>
-  </div>
+    <div class="articulo">
+        <img src="img/ari.jpeg" alt="Imagen de ejemplo">
+        <div class="contenido">
+            <h2>Ariana Grande</h2>
+            <p>Cada año, los premios Grammy celebran lo mejor de la música en Estados Unidos. Prevista para el 2 de febrero de 2025, la 67ª ceremonia, que tradicionalmente se celebra en Los Ángeles.</p>
+            <a href="https://www.vogue.mx/articulo/nominados-grammys-2025" class="leer-mas">Leer más...</a>
+        </div>
+    </div>
 </body>
 </html>
